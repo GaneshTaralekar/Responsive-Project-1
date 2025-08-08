@@ -17,37 +17,39 @@ main {
   padding: 2rem 4rem;
   width: 100%;
 }
-main section {
+main .view-1 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-main section img {
-  width: 80%;
+main .view-1 img {
+  width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main section br {
-  display: none;
-}
-main section h1 {
+main .view-1 h1 {
   font-size: 3rem;
   text-align: center;
   font-weight: 100;
+  width: 100%;
 }
-main section h1 i {
+main .view-1 h1 i {
   font-weight: 100;
+  font-size: 3rem;
 }
-main section p {
+main .view-1 p {
   text-align: center;
   font-weight: 100px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin: 1rem 0;
   opacity: 0.4;
   width: 100%;
+}
+main .view-1 p br {
+  display: none;
 }
 
 @media (min-width: 1080px) {
@@ -57,17 +59,18 @@ main section p {
   br {
     display: block;
   }
-  main section img {
+  main .view-1 img {
     width: 33%;
   }
-  main section h1 {
+  main .view-1 h1 {
     font-size: 10rem;
     line-height: 10rem;
   }
-  main section p {
+  main .view-1 p {
     font-size: 1.5rem;
     line-height: 3rem;
-    width: 50%;
+    width: 70%;
     margin: 3rem 0;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
