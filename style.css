@@ -51,26 +51,66 @@ main .view-1 p {
 main .view-1 p br {
   display: none;
 }
+main .view-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .view-2 .marquee {
+  display: flex;
+  margin-top: 2rem;
+  width: 70%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+main .view-2 .marquee .text {
+  display: flex;
+  flex-direction: row;
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: both;
+}
+main .view-2 .marquee .text p {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media (min-width: 1080px) {
   html {
     font-size: 1vw;
   }
-  br {
-    display: block;
-  }
   main .view-1 img {
     width: 33%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .view-1 h1 {
     font-size: 10rem;
-    line-height: 10rem;
+  }
+  main .view-1 h1 i {
+    font-size: 10rem;
   }
   main .view-1 p {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    width: 70%;
-    margin: 3rem 0;
-    text-align: center;
+    font-size: 1.3rem;
+    width: 30%;
+    line-height: 2rem;
+  }
+  main .view-2 .marquee {
+    width: 40%;
+  }
+  main .view-2 .marquee .text p {
+    font-size: 1.7rem;
   }
 }/*# sourceMappingURL=style.css.map */
